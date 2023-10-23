@@ -1,0 +1,88 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model Auto_Marche
+
+@{
+    var auto = Model.Auto;
+}
+
+<form  asp-action ="NuovaAuto">
+
+    <div class="form-group">
+        <label asp-for="@auto.AutomobileId" class="control-label"></label>
+        <input asp-for="@auto.AutomobileId" class="form-control" />
+        <span asp-validation-for="@auto.AutomobileId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@auto.Nome" class="control-label"></label>
+        <input asp-for="@auto.Nome" class="form-control" />
+        <span asp-validation-for="@auto.Nome" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@auto.Posti" class="control-label"></label>
+        <input asp-for="@auto.Posti" class="form-control" />
+        <span asp-validation-for="@auto.Posti" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@auto.DataImmatricolazione" class="control-label"></label>
+        <input asp-for="@auto.DataImmatricolazione" class="form-control" />
+        <span asp-validation-for="@auto.DataImmatricolazione" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@auto.Peso" class="control-label"></label>
+        <input asp-for="@auto.Peso" class="form-control" />
+        <span asp-validation-for="@auto.Peso" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@auto.Colore"></label>
+        <select asp-for="@auto.Colore" class="form-control">
+            @{
+                int i = 0;
+            }
+            @foreach (var item in Enum.GetValues(typeof(eColore)))
+            {
+                if (@i == 0)
+                {
+                    <option value="@item">seleziona un colore</option>
+                    i++;
+                }
+                else
+                {
+                   <option value="@item">@item</option>
+                }
+                
+            }
+        </select>
+    </div>
+   
+    <div class="form-group">
+        <label asp-for="@auto.MarcaId"></label>
+        <select asp-for="@auto.MarcaId" class="form-control">
+            <option value="">Seleziona una Marca</option>
+            @foreach (var item in Model.ElencoMarche)
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+         
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="@auto.MarcaId"> </label>
+        <select asp-for="@auto.MarcaId" asp-items="Model.ElencoMarche" class="form-control">
+            <option value="">Seleziona una Marca</option>
+        </select>
+    </div>
+
+
+
+    <div class="form-group">
+        <input type="submit" value="Salva" class="btn btn-primary" />
+    </div>
+</form>

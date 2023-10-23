@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es11DaTemplateVuoto", "Es11DaTemplateVuoto\Es11DaTemplateVuoto.csproj", "{84867FFA-37D9-47ED-B3AD-876A9CA907D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Es12TemplateMVC", "Es12TemplateMVC\Es12TemplateMVC.csproj", "{B1CB58A5-CB38-43A3-8050-F8F7CE18A761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84867FFA-37D9-47ED-B3AD-876A9CA907D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84867FFA-37D9-47ED-B3AD-876A9CA907D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84867FFA-37D9-47ED-B3AD-876A9CA907D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84867FFA-37D9-47ED-B3AD-876A9CA907D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CB58A5-CB38-43A3-8050-F8F7CE18A761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CB58A5-CB38-43A3-8050-F8F7CE18A761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CB58A5-CB38-43A3-8050-F8F7CE18A761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CB58A5-CB38-43A3-8050-F8F7CE18A761}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D25F579F-5326-40F8-B55E-27E20F435552}
+	EndGlobalSection
+EndGlobal

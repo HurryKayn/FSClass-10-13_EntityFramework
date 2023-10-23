@@ -1,0 +1,36 @@
+﻿*************************************
+esercitazione del 12/10/2023
+*************************************
+creare le cartelle obbligatorie
+ricordarsi di aggiornare il namespace
+compreso file _ViewImports
+-------------------------------------
+classe Automobili
+	Id (non required)
+	Nome
+	Marca
+	Colore (non required)
+	NrPosti
+	Peso (non required)
+	DataImmatricolazione (solo data e non ora)
+-------------------------------------
+sistemare classe program
+-------------------------------------
+creare controller per automobili
+gestire due azioni (quindi metodo AggiungiAutomobile con 1 override)
+una azione riceve chiamata da utente
+seconda azione riceve invio dati tramite pulsante
+
+-------------------------------------
+per marca gestire una Lista
+
+per colore gestire una enum
+
+entrambi devono avere un campo con possibilità di selezione valore
+-------------------------------------
+gestire tutti gli altri campi
+gestire messagi di errore personalizzati
+il campo nome de avere come minimo 2 caratteri
+		come massimo 50 caratteri
+-------------------------------------
+Gestire form con helper tag

@@ -1,0 +1,7 @@
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.AssemblyInfoInputs.cache
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.AssemblyInfo.cs
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.csproj.CoreCompileInputs.cache
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.MvcApplicationPartsAssemblyInfo.cache
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.RazorAssemblyInfo.cache
+C:\Vs\c2310_12\Esercitazione202310_12\Esercitazione202310_12\obj\Debug\net6.0\Esercitazione202310_12.RazorAssemblyInfo.cs

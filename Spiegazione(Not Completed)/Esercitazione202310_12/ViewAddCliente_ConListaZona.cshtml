@@ -1,0 +1,77 @@
+﻿@model Es05TagHelper.Models.Cliente
+
+@{
+    ViewData["Title"] = "ViewAddCliente";
+}
+
+<h1>ViewAddCliente</h1>
+
+<h4>Cliente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NuovoCliente">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ClienteId" class="control-label"></label>
+                <input asp-for="ClienteId" class="form-control" />
+                <span asp-validation-for="ClienteId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cognome" class="control-label"></label>
+                <input asp-for="Cognome" class="form-control" />
+                <span asp-validation-for="Cognome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Indirizzo" class="control-label"></label>
+                <input asp-for="Indirizzo" class="form-control" />
+                <span asp-validation-for="Indirizzo" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="Zona">Zona:</label>
+                <select asp-for="Zona" class="form-control">
+                    @* <option value="0"></option> *@
+                     <option value="">Seleziona una zona</option>
+                    @foreach (var zona in Enum.GetValues(typeof(eZona)))
+                    {
+                        @* <option value="@((int)zona)">@zona</option> *@
+                        <option value="@zona">@zona</option>
+                    }
+                </select>
+
+                @for (int i = 0; i < Model.Brands; i++)
+                {
+                    <option value="@Model.Brands[i].Marca">Model.Brands[i].Marca</option>
+                    <option value="@i">Model.Brands[i].Marca</option>
+                }
+                {i=0}
+                @foreach (var item in Model.Brands))
+                {
+                    @* <option value="@((int)zona)">@zona</option> *@
+                    <option value="@item.Marca">@item.Marca</option>
+                
+                    <option value="@i">@item.Marca</option>
+                }
+
+                <span asp-validation-for="Zona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
